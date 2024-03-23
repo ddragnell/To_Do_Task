@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_6/widgets/toDoList.dart';
+import 'package:flutter_application_6/views/toDoList.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,11 +11,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Lista de tareas',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
+        scaffoldBackgroundColor: Color.fromARGB(255, 221, 212, 221),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color.fromARGB(251, 32, 12, 161),
+        ),
       ),
+      debugShowCheckedModeBanner: false,
       home: const ToDoList(),
     );
   }

@@ -23,6 +23,12 @@ class TaskWidget extends StatelessWidget {
       title: Text(task.name),
       subtitle: Text(task.description),
       leading: Checkbox(
+        fillColor: MaterialStateProperty.resolveWith((states) {
+          if (states.contains(MaterialState.selected)) {
+            return Color.fromARGB(255, 89, 228, 47);
+          }
+          return null;
+        }),
         value: task.name.startsWith('✓ '),
         onChanged: (value) {
           onToggle();

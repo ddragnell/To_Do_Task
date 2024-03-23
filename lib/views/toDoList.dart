@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_6/models/task.dart';
-import 'package:flutter_application_6/widgets/addTask.dart';
+import 'package:flutter_application_6/controllers/addTask.dart';
 import 'package:flutter_application_6/controllers/taskList.dart';
 
 class ToDoList extends StatefulWidget {
@@ -48,7 +48,7 @@ class _ToDoListState extends State<ToDoList> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Lista de Tareas'),
+        title: const Text('Lista de Tareas', style: TextStyle(color: Color.fromARGB(255, 255, 237, 237))),
       ),
       body: ListView.builder(
         itemCount: tasks.length,
