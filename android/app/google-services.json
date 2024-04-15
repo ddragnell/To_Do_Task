@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "765402514605",
+    "project_id": "movil-practica-ac866",
+    "storage_bucket": "movil-practica-ac866.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:765402514605:android:66037ad1b72650f9933224",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_6"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsjAy_S8LMsC0z19pndvgxJGDiyAtGH3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
